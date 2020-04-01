@@ -1,4 +1,4 @@
 # ng-ghosts-loading
 
-![](https://media1.giphy.com/media/d8i1XJjV2Ym53KK0Dn/giphy.webp)
+![](C:\Users\Sergio Souza Novak\Documents\repositoriosNpm\ng-ghosts-loading\ng-ghosts-loading\projects\ng-ghosts-loading\src\photos\f1.gif)
 
