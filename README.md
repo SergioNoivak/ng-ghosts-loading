@@ -24,6 +24,42 @@ https://github.com/SergioNoivak/ng-ghosts-loading
 
 
 
+### Import to your application
+
+In the general module ``app.module.ts`` of your application you must import ``NgGhostsLoadingModule`` into your angular application.
+
+````ts
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+    // add here
+
+import { NgGhostsLoadingModule} from 'projects/ng-ghosts-loading/src/public-api';
+
+//app.module.ts
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+
+    // and add here
+    NgGhostsLoadingModule
+
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+````
+
+
+
 ## The `ghost-loading` tag
 
 The `ghost-loading` tag is the basic loading container that the framework works.a basic example of using the tag is the creation of a phantom square, as below: 
