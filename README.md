@@ -27,7 +27,7 @@ The html code is very simple, as shown below:
 
 When creating a tag `ghost-loading`, it must have the attributes ``height`` and ``width``, which must be passed in pixels. 
 
-#### circular ghost tag
+### circular ghost tag
 
 You can create a circular ghost tag by adding the circular property. As below:
 
@@ -43,6 +43,22 @@ You can create a circular ghost tag by adding the circular property. As below:
 
 
 
+### Adding child tags to `ghost-loading`
 
- 
+Only with the `ghost-loading` tag is it not possible to create complex styles, so to develop complex styles it is possible to have children of` ghost-loading` that will automatically be ghosts. The entire style application will still be preserved for your children from ``ghost-loading``:
+
+![Image](https://github.com/SergioNoivak/ng-ghosts-loading/blob/master/src/photos/f5.gif)
+
+````html
+
+<!-- app.component.html -->
+<div class="center">
+  <ghost-loading [width] = "100" [height] = "100" circle="true"  >
+    <img width="100" height="100" style="border-radius: 50%;" src="./image.png" alt="" class="">
+  </ghost-loading>
+</div>
+
+````
+
+in this example the image will also be applied by ghosts because it is a ``child of ghost-loading`` tag
 
