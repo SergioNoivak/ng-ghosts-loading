@@ -62,3 +62,25 @@ Only with the `ghost-loading` tag is it not possible to create complex styles, s
 
 in this example the image will also be applied by ghosts because it is a ``child of ghost-loading`` tag
 
+### ``delay``property
+
+The delay property of ghost-loading allows tags to have different ghosts animations. If no delay value is provided, the ghost component will assume 1.5 seconds of animation, but it is possible to provide the delay property with a value in seconds, as follows:
+
+![Image](https://github.com/SergioNoivak/ng-ghosts-loading/blob/master/src/photos/f6.gif)
+
+````html
+
+<!-- app.component.html -->
+
+  <ghost-loading [width] = "100" [height] = "10"   >
+  </ghost-loading>
+
+  <ghost-loading [delay]="2.0" [width] = "100" [height] = "10"   >
+  </ghost-loading>
+
+````
+
+It is observed that the two ghosts elements are not synchronized, this is due to the delay property. 
+
+
+
