@@ -10,6 +10,20 @@ ng-ghosts-loading is a graphical interface library that you can generate phantom
 
 ng-ghosts-loading it is an easy way to build page loading elements that make the user more calm.  And ng-ghosts-loading also soothes the angular application developer, because it saves work on developing CSS code with complex animations. 
 
+## Install
+
+you can download ng-ghosts-loading via npm: 
+
+````
+npm i ng-ghosts-loading
+````
+
+Or you can download the zip file from the github repository   🐙 :
+
+https://github.com/SergioNoivak/ng-ghosts-loading
+
+
+
 ## The `ghost-loading` tag
 
 The `ghost-loading` tag is the basic loading container that the framework works.a basic example of using the tag is the creation of a phantom square, as below: 
