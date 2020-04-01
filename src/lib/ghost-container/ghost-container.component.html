@@ -1,0 +1,15 @@
+<div [style.width]="width+'px'"  [style.height]="height+'px'"
+
+
+
+[ngStyle]="{
+
+
+'border-radius': circle ? '50%':'0%',
+'-webkit-animation':  (this.delay==undefined? '1.5' : delay) +'s animatedBgColor infinite',
+'animation': (this.delay==undefined? '1.5' : delay)+'s animatedBgColor infinite'
+
+
+}"         class="wrapper">
+  <ng-content  ></ng-content>
+</div>

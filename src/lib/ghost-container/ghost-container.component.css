@@ -1,0 +1,12 @@
+@keyframes animatedBgColor {
+  50% {
+    opacity: 0.4;
+    background-color: rgb(182, 182, 182);
+  }
+}
+.wrapper {
+  background-color: #f8f8f8;
+  opacity: 1;
+
+
+}
