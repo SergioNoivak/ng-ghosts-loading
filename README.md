@@ -84,6 +84,38 @@ It is observed that the two ghosts elements are not synchronized, this is due to
 
 
 
+
+
+## Example 1 : Dog contact ghost
+
+![Image](https://github.com/SergioNoivak/ng-ghosts-loading/blob/master/src/photos/f8.gif)
+
+In this example we are going to create a loading page with a photo of a beautiful dog with four ghost lines. The ghostly style is applied to the dog's photo because he is the son of the tag ``ghost-loading`` .Please note below:
+
+````html
+
+ <ghost-loading [width]= "200"  [height]= "200" [circle]="true">
+          <img style="border-radius: 50%;" width="200" height="200" [src]="imgSrc" alt="" class="">
+ </ghost-loading>
+
+   <div style="margin-top: 10px;">
+    <ghost-loading [width]= "200"  [height]= "10" ></ghost-loading>
+  </div>
+  <div style="margin-top: 10px;">
+    <ghost-loading [width]= "200"  [height]= "10" ></ghost-loading>
+  </div>
+  <div style="margin-top: 10px;">
+    <ghost-loading [width]= "200"  [height]= "10" ></ghost-loading>
+  </div>
+  <div style="margin-top: 10px;">
+    <ghost-loading [width]= "200"  [height]= "10" ></ghost-loading>
+  </div>
+
+
+````
+
+
+
 ## Example 2 : friend's list
 
 ![Image](https://github.com/SergioNoivak/ng-ghosts-loading/blob/master/src/photos/f7.gif)
@@ -110,3 +142,27 @@ In this example we are going to create a list of ghost friends, which can be use
 ````
 
 In this example, asynchronicity is guaranteed thanks to the ``delay`` attribute. As the external delay for the root node ``ghost-loading`` was not informed, a delay of 1.5 seconds is assumed for this. For the other ghosts elements, there is an informed ``delay`` property equal to 2.0 seconds
+
+
+
+## Tag attributes
+
+List of possible attributes of a ghost-loading: 
+
+<ul>
+    <li><b>width</b>: 
+represents the width of a ghost, and must be expressed as an integer in pixel values.</li>
+    	<li><b>height</b>:
+represents the height of a ghost, and must be expressed as an integer in pixel values.</li>
+	<li><b>delay</b>:
+Represents the delay / duration in the animation of the ghost.
+    </li>
+    <li><b>circle</b>:
+Boolean attribute that indicates whether the ghost is a circle.</li>
+</ul>
+
+
+
+# Contact me 
+
+@serginhosnovak@hotmail.com
