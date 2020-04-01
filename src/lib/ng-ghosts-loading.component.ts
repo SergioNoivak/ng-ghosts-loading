@@ -19,6 +19,10 @@ export class NgGhostsLoadingComponent implements OnInit {
 
   @Input('circle')
   circle:boolean = false;
+
+  @Input('animation')
+  animation:boolean ;
+
   constructor() { }
 
   ngOnInit() {
